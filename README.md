@@ -1,38 +1,45 @@
-# KnowDDI: ML Model for Drug-Drug Interaction Prediction
+# PK/PD Overlap Analysis Application
 
-## Overview
-KnowDDI is a machine learning model designed to predict potential drug-drug interactions (DDIs). The model analyzes molecular structures, pharmacological properties, and existing interaction data to identify potential adverse effects when multiple drugs are co-administered.
+This application provides tools for analyzing and visualizing pharmacokinetic (PK) and pharmacodynamic (PD) overlap in drug development and clinical pharmacology.
 
-## Key Features
-- Accurate prediction of drug-drug interactions
-- Analysis of molecular structures and properties
-- Integration of pharmacological knowledge
-- Support for both known and novel drug compounds
-- Interpretable results with confidence scores
+## Features
 
-## Technical Stack
-- Python with scikit-learn, PyTorch, and TensorFlow
-- Molecular fingerprinting with RDKit
-- Graph neural networks for molecular representation learning
-- Ensemble methods for prediction robustness
+- PK parameter calculation and visualization
+- PD response modeling and analysis
+- Interactive visualization of PK/PD relationships
+- Statistical analysis of drug exposure-response relationships
+- Export capabilities for reports and figures
 
-## Getting Started
-Instructions for setup, installation, and running predictions will be provided here.
+## Installation
 
-## Dataset
-Information about the training and validation datasets used for the model will be described here.
+1. Create a virtual environment:
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
-## Model Architecture
-Details of the machine learning architecture, network design, and training methodology will be documented in this section.
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-## Performance Metrics
-Model evaluation metrics, benchmark results, and comparative analysis will be presented here.
+## Project Structure
+
+```
+.
+├── src/
+│   ├── pk_analysis/       # PK analysis modules
+│   ├── pd_analysis/       # PD analysis modules
+│   └── visualization/     # Plotting and visualization tools
+├── tests/                 # Unit tests
+├── data/                  # Sample data and test datasets
+└── notebooks/            # Jupyter notebooks for examples
+```
+
+## Usage
+
+[Usage instructions will be added as features are implemented]
 
 ## License
-[License information will be added]
 
-## Citation
-If you use KnowDDI in your research, please cite our work (details will be provided).
-
-## Contributors
-[List of contributors will be added]
+MIT License
