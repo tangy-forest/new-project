@@ -1,0 +1,17 @@
+No.,Name,Dose[mg],Admin route,Cmin[mg/mL],Cmax[mg/mL],Tmax[h],Thalf[h]
+1,Dantrolene,10/kg,Oral,0.362,4.866,3.580,3.430
+2,Dantrolene,10/kg,IV,0.293,42.120,NA,3.270
+3,Amlodipine,15,Oral,0.00492,0.04533,3.15,4.42
+4,Amlodipine,5,IV,0.00091,0.039,NA,4.36
+5,Quinine,1200,Oral,0.779,4.567,2.360,7.960
+6,Quinine,,IV,0.860,6.814,NA,7.960
+7,18β-glycyrrhetinic acid,140.27,Oral,0.110,0.110,23.500,43.570
+8,18β-glycyrrhetinic acid,,IV,0.155,0.222,NA,48.140
+9,2-aminoethoxydiphenyl borate,9.90/kg,Oral,0.561,1.847,2.190,12.090
+10,2-aminoethoxydiphenyl borate,742.5,IV,0.634,2.496,NA,12.090
+11,Acridone,400/kg,Oral,0.669,3.107,6.120,6.500
+12,Acridone,30000,IV,15.920,204.000,NA,6.450
+13,Arachidonic acid,154,Oral,0.067,0.120,4.400,21.950
+14,Arachidonic acid,,IV,0.100,0.213,NA,22.270
+15,Carbenoxolone,114.15,Oral,0.020,5.225,3.480,2.400
+16,Carbenoxolone,,IV,0.011,9.180,NA,2.400 

@@ -24,6 +24,7 @@ wheels/
 venv/
 ENV/
 env/
+.env
 
 # IDE
 .idea/
@@ -31,12 +32,9 @@ env/
 *.swp
 *.swo
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# Streamlit
+.streamlit/
 
-# Environment variables
-.env
-
-# Operating System
+# OS
 .DS_Store
 Thumbs.db 
