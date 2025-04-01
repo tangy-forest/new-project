@@ -493,33 +493,39 @@ def main():
     # Add formula section
     with st.expander("📚 Pharmacokinetic Formulas", expanded=False):
         st.markdown("""
-        ### IV Administration
+        ## IV Administration
         Concentration after intravenous (IV) administration follows first-order elimination:
-        
-        \[C(t) = C_0 \cdot e^{-k_e t}\]
-        
+
+        $$
+        C(t) = C_0 \cdot e^{-k_e t}
+        $$
+
         where:
-        - \(C(t)\) is the concentration at time t
-        - \(C_0\) is the initial concentration
-        - \(k_e = \frac{\ln(2)}{t_{1/2}}\) is the elimination rate constant
-        - \(t_{1/2}\) is the half-life
-        
-        ### Oral Administration
+        * $C(t)$ is the concentration at time $t$
+        * $C_0$ is the initial concentration
+        * $k_e = \\frac{\\ln(2)}{t_{1/2}}$ is the elimination rate constant
+        * $t_{1/2}$ is the half-life
+
+        ## Oral Administration
         Concentration after oral administration follows a two-compartment model with first-order absorption:
-        
-        \[C(t) = C_{max} \cdot \frac{k_a}{k_a - k_e} \cdot (e^{-k_e t} - e^{-k_a t})\]
-        
+
+        $$
+        C(t) = C_{max} \cdot \\frac{k_a}{k_a - k_e} \cdot (e^{-k_e t} - e^{-k_a t})
+        $$
+
         where:
-        - \(k_a\) is the absorption rate constant
-        - \(k_a = \frac{\ln(2)}{t_{max}} \cdot (1 + \sqrt{1 + \frac{2t_{max}k_e}{\ln(2)}})\)
-        - \(t_{max}\) is the time to peak concentration
-        
-        ### Overlap Score
+        * $k_a$ is the absorption rate constant
+        * $k_a = \\frac{\\ln(2)}{t_{max}} \cdot \\left(1 + \sqrt{1 + \\frac{2t_{max}k_e}{\\ln(2)}}\\right)$
+        * $t_{max}$ is the time to peak concentration
+
+        ## Overlap Score
         The overlap between two concentration curves is calculated as:
-        
-        \[\text{Overlap}(\%) = \frac{\int_0^T \min(C_1(t), C_2(t)) dt}{\int_0^T \max(C_1(t), C_2(t)) dt} \cdot 100\]
-        
-        where \(C_1(t)\) and \(C_2(t)\) are normalized concentration curves.
+
+        $$
+        \\text{Overlap}(\\%) = \\frac{\\int_0^T \\min(C_1(t), C_2(t)) \\, dt}{\\int_0^T \\max(C_1(t), C_2(t)) \\, dt} \cdot 100
+        $$
+
+        where $C_1(t)$ and $C_2(t)$ are normalized concentration curves.
         """)
     
     # Create tabs

@@ -1,72 +1,61 @@
-# Drug Concentration Overlap Analysis
+# Pharmacokinetic Overlap Analysis
 
-A Streamlit application for analyzing and visualizing pharmacokinetic (PK) concentration-time profiles and calculating overlap scores between different compounds.
+A web application for analyzing and visualizing drug concentration overlaps between different compounds.
 
-## Features
+## Deployment on Vercel
 
-- **Data Input**: Upload CSV files containing PK parameters or use sample data
-- **Concentration-Time Curve Visualization**: Plot and compare concentration-time curves
-- **Overlap Score Calculation**: Calculate and visualize the overlap between different compounds
-- **Image Processing**: Extract concentration-time data from uploaded plot images
-- **Formula Reference**: Built-in PK formula documentation
-- **Multiple Administration Routes**: Support for both IV and oral administration
-- **Normalization**: Option to view normalized concentrations for better comparison
-
-## Installation
-
-1. Clone the repository:
+1. Install the Vercel CLI:
 ```bash
-git clone https://github.com/yourusername/drug-concentration-overlap.git
-cd drug-concentration-overlap
+npm install -g vercel
 ```
 
-2. Create a virtual environment (recommended):
+2. Login to Vercel:
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+vercel login
 ```
 
-3. Install dependencies:
+3. Deploy the application:
+```bash
+vercel
+```
+
+4. To share with collaborators:
+   - Go to your Vercel dashboard
+   - Select the project
+   - Click on "Settings" > "Collaboration"
+   - Add collaborator email addresses
+
+## Local Development
+
+1. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-## Usage
-
-1. Start the application:
+2. Run the application:
 ```bash
 streamlit run src/app.py
 ```
 
-2. Use the application:
-   - Upload your CSV data file or use the sample data
-   - Select compounds to compare
-   - Adjust visualization settings
-   - View overlap scores and concentration-time curves
+## Environment Variables
 
-### CSV Data Format
+No environment variables are required for basic functionality.
 
-Your CSV file should include the following columns:
-- `No.`: Compound identifier
-- `Name`: Compound name
-- `Dose[mg]`: Dose amount (can include /kg)
-- `Admin route`: Administration route (IV or Oral)
-- `Cmin[mg/mL]`: Minimum concentration
-- `Cmax[mg/mL]`: Maximum concentration
-- `Tmax[h]`: Time to maximum concentration
-- `Thalf[h]`: Half-life
+## Features
 
-### Pharmacokinetic Models
-
-The application uses:
-- First-order elimination model for IV administration
-- Two-compartment model with first-order absorption for oral administration
-- Area-based overlap score calculation for comparing concentration profiles
+- Upload compound data via CSV
+- Interactive concentration-time plots
+- Normalized concentration comparison
+- Overlap score calculation
+- Image-based curve extraction
+- LaTeX rendered pharmacokinetic formulas
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+1. Fork the repository
+2. Create a feature branch
+3. Submit a pull request
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+MIT License
